@@ -1,0 +1,342 @@
+<!--Index2.html-->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+     <link rel="preconnect" href="https://unpkg.com">
+      <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@2.1.1/src/css/phosphor.css" />
+
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+    <header>
+        <div class="pill-nav" role="navigation" aria-label="Primary">
+            <div class="brand">My Portfolio</div>
+            <ul class="navmenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Dark Mode Toggle inside navbar -->
+            <label class="switch theme-toggle" aria-label="Toggle Dark Mode">
+                <input type="checkbox" id="toggle-dark">
+                <span class="slider" aria-hidden="true">
+                  <!-- Sun SVG -->
+                  <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false" aria-hidden="true">
+                    <path d="M12 4.5a1 1 0 0 1 1 1V7a1 1 0 1 1-2 0V5.5a1 1 0 0 1 1-1Zm0 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm7.5-3.5a1 1 0 0 1 1 1v.001a1 1 0 1 1-2 0V13a1 1 0 0 1 1-1ZM12 17a1 1 0 0 1 1 1v1.5a1 1 0 1 1-2 0V18a1 1 0 0 1 1-1Zm-7.5-4a1 1 0 0 1 1 1v.001a1 1 0 1 1-2 0V13a1 1 0 0 1 1-1Zm11.9-5.4a1 1 0 0 1 1.4 0l1.06 1.06a1 1 0 1 1-1.42 1.42L16.98 8.6a1 1 0 0 1 0-1.4Zm-9.8 9.8a1 1 0 0 1 1.4 0l1.06 1.06a1 1 0 0 1-1.42 1.42L5.18 17.4a1 1 0 0 1 0-1.4Zm0-9.8a1 1 0 0 1 1.42 0l1.06 1.06A1 1 0 0 1 6.34 8.6L5.28 7.54a1 1 0 0 1 0-1.4Zm9.8 9.8a1 1 0 0 1 1.42 0l1.06 1.06a1 1 0 0 1-1.42 1.42l-1.06-1.06a1 1 0 0 1 0-1.42Z"/>
+                  </svg>
+                  <!-- Moon SVG -->
+                  <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
+                  </svg>
+                </span>
+            </label>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Hello I'm Chanatip Tonngern <span class="wave">👋</span></h1>
+            <h2>"You can call me Earn"</h2>
+            <h3><span class="line"></span> Front-End Developer</h3>
+            <p>I'm Front-End based in Thailand,<br>
+            and I'm very passionate and dedicated to my work.</p>
+            <div class="home-btn">
+                <a href="#" class="btn dark">Contact Info</a>
+                <a href="#" class="btn dark">Download CV</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="20191204_001430_IMG_9626.JPG" 
+            alt="Earn - Front-End developer">
+        </div>
+        
+        <!-- ปุ่มเลื่อนไปบนสุด -->
+        <a href="#home" class="scroll-top" aria-label="Scroll to top">
+        <i class="ph-bold ph-arrow-bend-right-down"></i>
+        </a>
+    </section>
+
+    <div class="socials-icons">
+        <a href="#"><i class="ph ph-github-logo"></i></a>
+        <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+    </div>
+        <i class="ph-bold ph-arrow-bend-right-down"></i>
+    </a>
+
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-img">
+          <img src="20191204_001430_IMG_9626.JPG" alt="About Me Photo">
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <div class="about-row">
+            <div class="about-box">
+              <h3><i class="ph ph-user"></i> Who Am I</h3>
+              <p>
+                I'm a frontend developer who crafts responsive, interactive, and clean UIs.<br>
+                With a background in Engineering, I blend design sense with technical logic.
+              </p>
+            </div>
+            <div class="about-box">
+              <h3><i class="ph ph-lightbulb"></i>My Approach</h3>
+              <p>
+                I focus on user-centered design, performance, and accessibility.<br>
+                Always evolving with modern tech to deliver seamless digital experiences.
+              </p>
+            </div>
+          </div>
+          <div class="about-row personal-info">
+            <div class="info-list">
+              <h4><i class="ph ph-info"></i> Personal Info</h4>
+              <ul>
+                <li><i class="ph ph-user"></i> <b>Name:</b> Chanatip Tonngern </li>
+                <li><i class="ph ph-nickname"></i><b>Nickname:</b> Earn </li>
+                <li><i class="ph ph-map-pin"></i> <b>Place of Birth:</b> Thailand</li>
+                <li><i class="ph ph-phone"></i> <b>Phone:</b> 091-748-4417</li>
+                <li><i class="ph ph-graduation-cap"></i> <b>GPA:</b> 2.01 / 4.00</li>
+              </ul>
+            </div>
+            <div class="info-list">
+              <ul>
+                <li><i class="ph ph-calendar"></i> <b>Date of Birth:</b> 25 May 2000</li>
+                <li><i class="ph ph-envelope"></i> <b>Gmail:</b> earn.hcg32@gmail.com </li>
+                <li><i class="ph ph-graduation-cap"></i> <b>Education:</b> Srinakharinwirot University </li>
+        </div>
+      </div>
+    </section>
+
+    <!--------------Skill section-------------->
+   <section class="skills" id="skills">
+  <h2>Skills</h2>
+  <p class="skills-subtitle">Technologies & tools I use to build responsive, accessible UIs.</p>
+
+  <!-- Group 1: Languages -->
+  <h3 class="skill-group">Languages</h3>
+  <div class="skills-grid">
+    <!-- HTML5 -->
+    <div class="skill-card">
+      <svg class="skill-logo" viewBox="0 0 128 128" aria-hidden="true">
+        <path fill="#E34F26" d="M19 3l9 101 36 10 36-10 9-101H19z"/>
+        <path fill="#EF652A" d="M64 112l29-8 8-89H64v97z"/>
+        <path fill="#fff" d="M64 52H45l1 11h18V52zm0-20H44l1 11h19V32zm0 57l-.1.03L52.7 86h-9.4l1.4 16 19.3 5.3V89z"/>
+        <path fill="#ebebeb" d="M64 52v11h17.1l-1.6 18.7L64 89v11l19.3-5.3L86.6 63H64zm0-20v11h20l.9-11H64z"/>
+      </svg>
+      <p>HTML5</p>
+    </div>
+
+    <!-- CSS3 -->
+    <div class="skill-card">
+      <svg class="skill-logo" viewBox="0 0 128 128" aria-hidden="true">
+        <path fill="#264DE4" d="M19 3l9 101 36 10 36-10 9-101H19z"/>
+        <path fill="#2965F1" d="M64 112l29-8 8-89H64v97z"/>
+        <path fill="#fff" d="M64 32h28l-1 11H64V32zm0 20h26l-2 22-24 7V52z"/>
+        <path fill="#ebebeb" d="M64 32v11H36l-1-11h29zm0 20v29l-20-6-1-11h21V52z"/>
+      </svg>
+      <p>CSS3</p>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill-card">
+      <svg class="skill-logo" viewBox="0 0 128 128" aria-hidden="true">
+        <rect x="8" y="8" width="112" height="112" rx="12" fill="#F7DF1E"/>
+        <path fill="#000" d="M72 92c0 10.5-6.2 16-15.6 16-7.4 0-12-3.6-14.2-8.4l9.1-5.3c1.8 3.2 3.4 5 6.8 5 3.5 0 5.7-1.4 5.7-6.8V60H72v32zM79.2 107.3l9.2-5.3c2.4 3.9 5.5 6.8 11.1 6.8 4.7 0 7.7-2.3 7.7-5.5 0-3.8-3-5.1-8.2-7.3l-2.8-1.2c-8.1-3.4-13.5-7.6-13.5-16.6 0-8.3 6.3-14.6 16.2-14.6 7 0 12 2.4 15.6 8.6l-8.6 5.5c-1.9-3.4-4-4.8-7-4.8s-4.9 1.9-4.9 4.8c0 3.3 1.9 4.7 6.2 6.6l2.8 1.2c9.5 4.1 15 8.3 15 17.7 0 10.1-7.9 15.6-18.6 15.6-10.4 0-17.1-4.9-20.2-11.5z"/>
+      </svg>
+      <p>JavaScript</p>
+    </div>
+
+    <!-- TypeScript (ถ้ายังไม่ใช้ ลบออกได้) -->
+    <div class="skill-card">
+      <svg class="skill-logo" viewBox="0 0 128 128"><rect x="8" y="8" width="112" height="112" rx="12" fill="#3178C6"/><path fill="#fff" d="M73 48H31v12h14v44h14V60h14V48zm8.9 44.7c3 2 6.4 3 10.2 3 3.6 0 6.3-1 8.2-2.9 1.9-2 2.9-4.5 2.9-7.7 0-2.1-.5-3.9-1.6-5.5-1.1-1.6-2.9-3.1-5.5-4.5l-3.8-2c-1.9-1-3.3-1.9-4.2-2.7-.9-.8-1.3-1.7-1.3-2.7 0-1.1.4-2 1.3-2.7.9-.7 2.1-1.1 3.7-1.1 2.4 0 4.7.8 6.9 2.5l3.7-9.1c-2.6-1.7-5.8-2.6-9.6-2.6-3.7 0-6.7 1-9 3-2.3 2-3.4 4.7-3.4 8.2 0 2.4.6 4.5 1.7 6.3 1.1 1.8 3.1 3.5 5.9 5l3.7 2c2 .9 3.3 1.8 3.9 2.7.6.9.9 1.8.9 2.7 0 1.2-.5 2.2-1.5 3-.9.8-2.2 1.2-3.9 1.2-3 0-5.8-1-8.5-3.1l-3.8 9.1z"/></svg>
+      <p>TypeScript</p>
+    </div>
+  </div>
+
+  <!-- Group 2: Frameworks & Libraries -->
+  <h3 class="skill-group">Frameworks & Libraries</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <svg class="skill-logo" viewBox="-11 -11 22 22" aria-hidden="true">
+        <circle r="2" fill="#61DAFB"/>
+        <g fill="none" stroke="#61DAFB" stroke-width="1.4">
+          <ellipse rx="10" ry="4.5"/>
+          <ellipse rx="10" ry="4.5" transform="rotate(60)"/>
+          <ellipse rx="10" ry="4.5" transform="rotate(120)"/>
+        </g>
+      </svg>
+      <p>React</p>
+    </div>
+
+    <!-- Tailwind (ไอคอนเรียบๆ) -->
+    <div class="skill-card">
+      <svg class="skill-logo" viewBox="0 0 48 48"><path fill="#06B6D4" d="M24 12c-5.3 0-8.6 2.7-10 8 2-2.7 4.3-3.7 6.8-3 1.5.4 2.6 1.6 3.8 3.1 1.9 2.4 4.2 4 7.4 4 5.3 0 8.6-2.7 10-8-2 2.7-4.3 3.7-6.8 3-1.5-.4-2.6-1.6-3.8-3.1-1.9-2.4-4.2-4-7.4-4zM14 28c-5.3 0-8.6 2.7-10 8 2-2.7 4.3-3.7 6.8-3 1.5.4 2.6 1.6 3.8 3.1 1.9 2.4 4.2 4 7.4 4 5.3 0 8.6-2.7 10-8-2 2.7-4.3 3.7-6.8 3-1.5-.4-2.6-1.6-3.8-3.1-1.9-2.4-4.2-4-7.4-4z"/></svg>
+      <p>Tailwind CSS</p>
+    </div>
+
+    <!-- Node.js (โลโก้เรียบ) -->
+    <div class="skill-card">
+      <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#3C873A" d="M64 10l51 29v50L64 118 13 89V39z"/><path fill="#fff" d="M64 104l36-20V44L64 24 28 44v40z"/><path fill="#3C873A" d="M70 78V50h12v8H82v8h-6v12zM46 78V50h22v8H54v4h12v8H54v8z"/></svg>
+      <p>Node.js</p>
+    </div>
+  </div>
+
+  <!-- Group 3: Tools & Design -->
+  <h3 class="skill-group">Tools & Design</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <i class="ph ph-github-logo skill-icon" aria-hidden="true"></i>
+      <p>GitHub</p>
+    </div>
+    <div class="skill-card">
+      <i class="ph ph-figma-logo skill-icon" aria-hidden="true"></i>
+      <p>Figma</p>
+    </div>
+    <div class="skill-card">
+      <i class="ph ph-selection-all skill-icon" aria-hidden="true"></i>
+      <p>VS Code</p>
+    </div>
+    <div class="skill-card">
+      <i class="ph ph-squares-four skill-icon" aria-hidden="true"></i>
+      <p>Canva</p>
+    </div>
+  </div>
+</section>
+
+ <!-- Projects Section -->
+    <section class="projects" id="projects">
+  <h2>Projects</h2>
+  <p class="projects-subtitle">A few things I’ve built and what I’m working on next.</p>
+
+  <div class="projects-grid">
+    <!-- Project 1: This Portfolio -->
+    <article class="project-card">
+      <div class="project-thumb"> 
+        <img src="portfolio_cover.jpg" 
+     alt="Screenshot of my Portfolio website"
+     width="1280" height="720" loading="lazy">
+      </div>
+      <div class="project-body">
+        <h3>Personal Portfolio</h3>
+        <p>Responsive portfolio with dark mode, section-based navigation, and interactive skill cards.</p>
+        <ul class="project-tags">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="project-actions">
+          <a href="#" class="btn ghost" aria-label="Open live demo of Portfolio">Live Demo</a>
+          <a href="#" class="btn ghost" aria-label="Open source code of Portfolio">Source</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2: TDEE_BMI -->
+    <article class="project-card">
+      <div class="project-thumb">
+        <img src="../tdee-bmi/tdee_cover.jpg" alt="TDEE/BMI calculator preview"
+             width="1280" height="720" loading="lazy" decoding="async" fetchpriority="low">
+      </div>
+      <div class="project-body">
+        <h3>TDEE-BMI </h3>
+        <p>A simple health tool to calculate TDEE (Total Daily Energy Expenditure) 
+          and BMI (Body Mass Index). 
+          It provides estimated daily calories, BMI status, 
+          and tailored advice for nutrition and exercise 
+          — all with a clean earth-tone design.</p>
+        <ul class="project-tags">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="project-actions">
+          <a href="../tdee-bmi/tdee-bmi.html" class="btn ghost" target="_blank" rel="noopener">Live Demo</a>
+          <a href="#" class="btn ghost" aria-label="Open source code of To-do App">Source</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3: Learning Journey -->
+    <article class="project-card">
+      <div class="project-thumb">
+        <svg viewBox="0 0 640 360" class="thumb-svg" aria-hidden="true">
+          <rect width="100%" height="100%" rx="14" fill="#eaeaea"/>
+          <rect x="28" y="46" width="420" height="18" rx="6" fill="#d8d8d8"/>
+          <rect x="28" y="86" width="360" height="14" rx="6" fill="#d8d8d8"/>
+          <rect x="28" y="114" width="380" height="14" rx="6" fill="#d8d8d8"/>
+          <rect x="28" y="168" width="280" height="14" rx="6" fill="#d8d8d8"/>
+        </svg>
+      </div>
+      <div class="project-body">
+        <h3>Learning Journey</h3>
+        <p>Currently learning React & Tailwind. Next up: blog with Next.js and a weather dashboard using public APIs.</p>
+        <ul class="project-tags">
+          <li>React</li><li>Tailwind</li><li>Next.js (planned)</li>
+        </ul>
+        <div class="project-actions">
+          <a class="btn ghost disabled" aria-disabled="true">Live Soon</a>
+          <a href="#" class="btn ghost" aria-label="Open learning notes repo">Notes</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Contact Section -->
+
+ <section class="contact" id="contact">
+  <h2 class="heading">Contact</h2>
+  <p class="contact-subtitle">
+    Let's connect! Whether you have a project, question, or just want to say hi, my inbox is always open.
+  </p>
+
+  <div class="contact-info">
+    <a href="mailto:earn.hcg32@gmail.com" class="contact-link" title="Email">
+      <span style="font-size:1.3em;display:flex;align-items:center;gap:8px;">
+        <svg width="22" height="22" fill="none" stroke="#6366f1" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="4"/><path d="m4 6 8 7 8-7"/></svg>
+        earn.hcg32@gmail.com
+      </span>
+    </a>
+    <a href="https://github.com/oOEARNZOo" class="contact-link" target="_blank" title="GitHub">
+      <span style="font-size:1.3em;display:flex;align-items:center;gap:8px;">
+        <svg width="22" height="22" fill="#232323" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.7.12 2.5.35 1.9-1.33 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .26.18.57.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+        github.com/earn-hcg32
+      </span>
+    </a>
+    <a href="https://www.linkedin.com/in/chanatip-tonngern-698941364/" class="contact-link" target="_blank" title="LinkedIn">
+      <span style="font-size:1.3em;display:flex;align-items:center;gap:8px;">
+        <svg width="22" height="22" fill="#0a66c2" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+        linkedin.com/in/yourlinkedin
+      </span>
+    </a>
+  </div>
+
+  <!-- ฟอร์มติดต่อ (ใช้งานจริงต้องเปลี่ยน Formspree FormID) -->
+  <form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+    <div class="field-row">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+    </div>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn dark">Send Message</button>
+  </form>
+</section>
+
+
+
+    <script src="Type2.js" defer></script>
+
+  </body>
+</html>
+
+
+
+
+
