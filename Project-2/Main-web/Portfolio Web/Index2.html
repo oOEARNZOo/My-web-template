@@ -12,6 +12,7 @@
     <!-- Icons -->
      <link rel="preconnect" href="https://unpkg.com">
       <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@2.1.1/src/css/phosphor.css" />
+      <script src="https://unpkg.com/phosphor-icons@2.1.1/src/index.js"></script>
 
     <link rel="stylesheet" href="Style2.css">
 </head>
@@ -27,19 +28,22 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <!-- Dark Mode Toggle inside navbar -->
-            <label class="switch theme-toggle" aria-label="Toggle Dark Mode">
-                <input type="checkbox" id="toggle-dark">
-                <span class="slider" aria-hidden="true">
-                  <!-- Sun SVG -->
-                  <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false" aria-hidden="true">
-                    <path d="M12 4.5a1 1 0 0 1 1 1V7a1 1 0 1 1-2 0V5.5a1 1 0 0 1 1-1Zm0 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm7.5-3.5a1 1 0 0 1 1 1v.001a1 1 0 1 1-2 0V13a1 1 0 0 1 1-1ZM12 17a1 1 0 0 1 1 1v1.5a1 1 0 1 1-2 0V18a1 1 0 0 1 1-1Zm-7.5-4a1 1 0 0 1 1 1v.001a1 1 0 1 1-2 0V13a1 1 0 0 1 1-1Zm11.9-5.4a1 1 0 0 1 1.4 0l1.06 1.06a1 1 0 1 1-1.42 1.42L16.98 8.6a1 1 0 0 1 0-1.4Zm-9.8 9.8a1 1 0 0 1 1.4 0l1.06 1.06a1 1 0 0 1-1.42 1.42L5.18 17.4a1 1 0 0 1 0-1.4Zm0-9.8a1 1 0 0 1 1.42 0l1.06 1.06A1 1 0 0 1 6.34 8.6L5.28 7.54a1 1 0 0 1 0-1.4Zm9.8 9.8a1 1 0 0 1 1.42 0l1.06 1.06a1 1 0 0 1-1.42 1.42l-1.06-1.06a1 1 0 0 1 0-1.42Z"/>
-                  </svg>
-                  <!-- Moon SVG -->
-                  <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false" aria-hidden="true">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
-                  </svg>
-                </span>
-            </label>
+            <button class="theme-toggle-btn" id="toggle-dark" aria-label="Toggle Dark Mode">
+                <svg id="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <svg id="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -243,7 +247,7 @@
     <!-- Project 2: TDEE_BMI -->
     <article class="project-card">
       <div class="project-thumb">
-        <img src="../tdee-bmi/tdee_cover.jpg" alt="TDEE/BMI calculator preview"
+        <img src="../tdee-bmi/tdee-bmi-cover.png" alt="TDEE/BMI calculator preview"
              width="1280" height="720" loading="lazy" decoding="async" fetchpriority="low">
       </div>
       <div class="project-body">

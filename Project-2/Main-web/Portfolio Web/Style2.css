@@ -359,81 +359,78 @@ body.dark-mode .line {
     max-width: 260px;
     max-height: 320px;
   }
-
-  /* Sun/Moon toggle */
-.theme-toggle { display:inline-flex; align-items:center; cursor:pointer; }
-.theme-toggle input { display:none; }
-
-.theme-toggle .slider{
-  width:48px; height:28px; border-radius:999px;
-  background:#2a2a35; display:flex; align-items:center; justify-content:center;
-  gap:6px; color:#facc15; transition:background .2s, box-shadow .2s; padding:0 6px;
-}
-.theme-toggle .ph-sun,.theme-toggle .ph-moon{
-  font-size:16px; line-height:1; transition:opacity .2s, transform .2s, color .2s;
-}
-
-/* Normal */
-.theme-toggle .ph-sun{ opacity:1; transform:scale(1);   color:#facc15; }
-.theme-toggle .ph-moon{ opacity:.45; transform:scale(.9); color:#c7d2fe; }
-
-/* Dark mode */
-body.dark-mode .theme-toggle .slider{ background:#111318; }
-body.dark-mode .theme-toggle .ph-sun{ opacity:.35; transform:scale(.9); color:#fde68a; }
-body.dark-mode .theme-toggle .ph-moon{ opacity:1; transform:scale(1);   color:#a78bfa; }
 }
 
 /* =========================
-   Toggle Switch (Dark Mode)
+   Theme Toggle Button
 ========================= */
-  .switch {
-  position: relative;
-  display: inline-block;
+.theme-toggle-btn {
   width: 48px;
-  height: 26px;
-  margin-left: 2rem;
-  vertical-align: middle;
-  background: #fff;
-  border-radius: 26px;
+  height: 48px;
+  border-radius: 50%;
   border: 2px solid #6366f1;
-  box-shadow: 0 0 0 2px rgba(99,102,241,0.10);
-  transition: border-color .3s, box-shadow .3s;
+  background: #fff;
+  color: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.15);
+  position: relative;
 }
 
-body.dark-mode .switch {
+.theme-toggle-btn:hover {
+  background: #6366f1;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.25);
+}
+
+.theme-toggle-btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* Light mode (default) - sun visible, moon hidden */
+#sun-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+#moon-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0.8);
+}
+
+/* Dark mode - sun hidden, moon visible */
+body.dark-mode #sun-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg) scale(0.8);
+}
+
+body.dark-mode #moon-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+body.dark-mode .theme-toggle-btn {
   background: #23232a;
-  border: 2px solid #a78bfa;
-  box-shadow: 0 0 0 2px rgba(99,102,241,0.18);
+  border-color: #a78bfa;
+  color: #a78bfa;
+  box-shadow: 0 2px 8px rgba(167,139,250,0.15);
 }
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+body.dark-mode .theme-toggle-btn:hover {
+  background: #a78bfa;
+  color: #23232a;
+  box-shadow: 0 4px 12px rgba(167,139,250,0.25);
 }
-.slider {
-    position: relative;
-    cursor: pointer;
-    display: flex; align-items: center; justify-content: center; gap: 6px;
-    background-color: #2a2a35;
-    transition: .2s;
-    border-radius: 26px;
-    padding: 0 6px;
-}
-/* remove knob, show icons instead */
-.slider:before { content: none; }
-.theme-toggle .icon-sun,.theme-toggle .icon-moon{ width:16px; height:16px; transition:opacity .2s, transform .2s, color .2s; }
-.theme-toggle .icon-sun{ opacity:1; transform:scale(1); color:#facc15; }
-.theme-toggle .icon-moon{ opacity:.45; transform:scale(.9); color:#c7d2fe; }
-body.dark-mode .theme-toggle .slider{ background:#111318; }
-body.dark-mode .theme-toggle .icon-sun{ opacity:.35; transform:scale(.9); color:#fde68a; }
-body.dark-mode .theme-toggle .icon-moon{ opacity:1; transform:scale(1); color:#a78bfa; }
-input:checked + .slider {
-    background-color: #23232a;
-}
-input:checked + .slider:before {
-    transform: translateX(20px); /* จาก 22px เป็น 20px */
-}
+
 /* =========================
    End Toggle Switch (Dark Mode)
 ========================= */

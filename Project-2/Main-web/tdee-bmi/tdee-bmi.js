@@ -14,10 +14,10 @@ const $ = (s,r=document)=>r.querySelector(s);
     const toggle = document.getElementById('toggle-dark');
     apply(dark);
     if (toggle) {
-      toggle.checked = dark;
-      toggle.addEventListener('change', function () {
-        apply(this.checked);
-        localStorage.setItem('theme', this.checked ? 'dark' : 'light');
+      toggle.addEventListener('click', function () {
+        const newTheme = !document.body.classList.contains('dark-mode');
+        apply(newTheme);
+        localStorage.setItem('theme', newTheme ? 'dark' : 'light');
       });
     }
   };

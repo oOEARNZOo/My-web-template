@@ -59,30 +59,14 @@ body{
   border:1px solid var(--stroke);
 }
 .brand{ 
-  font-weight:700; 
-  letter-spacing:.3px;
+  font-weight:800; 
+  letter-spacing:.5px;
   color:var(--fg);
-  font-size:1.5rem;
+  font-size:2.2rem;
+  line-height:1.1;
+  
 }
-.nav__link{ 
-  text-decoration:none; 
-  color:var(--fg); 
-  opacity:.7;
-  padding:8px 16px;
-  border-radius:var(--r-sm);
-  transition:var(--transition);
-}
-.nav__link.is-active{ 
-  opacity:1; 
-  font-weight:600;
-  background:linear-gradient(90deg, var(--accent-light) 0%, var(--accent) 100%);
-  color:var(--white);
-  box-shadow:0 2px 8px rgba(99,102,241,0.15);
-}
-.nav__link:hover{
-  opacity:1;
-  background:var(--stroke);
-}
+
 
 .card{
   background:var(--card); 
@@ -424,4 +408,61 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(20px);
+}
+
+/* =========================
+   Theme Toggle Button
+========================= */
+.theme-toggle-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.theme-toggle-btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* Light mode (default) - sun visible, moon hidden */
+#sun-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+}
+
+#moon-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0.8);
+}
+
+/* Dark mode - sun hidden, moon visible */
+body.dark-mode #sun-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg) scale(0.8);
+}
+
+body.dark-mode #moon-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
 }
